@@ -1,0 +1,8 @@
+{{ define "main" }}
+
+{{- $dims := imageConfig "static/images/image1.jpg" -}}
+
+<br>
+{{ $dims.Width }} x {{ $dims.Height }}
+
+{{ end }}
