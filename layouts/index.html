@@ -1,8 +1,15 @@
 {{ define "main" }}
 
-{{- $dims := imageConfig "static/images/image1.jpg" -}}
-
+{{- $dims1 := imageConfig "static/images/image1.jpg" -}}
+static/images/image1.jpg
 <br>
-{{ $dims.Width }} x {{ $dims.Height }}
+{{ $dims1.Width }} x {{ $dims1.Height }}
+
+<br><br>
+
+{{- $dims2 := imageConfig "static/images/image2.jpg" -}}
+static/images/image2.jpg
+<br>
+{{ $dims2.Width }} x {{ $dims2.Height }}
 
 {{ end }}
